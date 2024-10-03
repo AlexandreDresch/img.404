@@ -16,20 +16,68 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="hidden" aria-label="Main Header">
+      <nav aria-label="Main Navigation">
         <ul>
-          <li><a href="#home" class="glitch-button">00_HOME</a></li>
-          <li><a href="#about" class="glitch-button">01_ABOUT</a></li>
-          <li><a href="#manifesto" class="glitch-button">02_MANIFESTO</a></li>
-          <li><a href="#articles" class="glitch-button">03_ARTICLES</a></li>
-          <li><a href="#community" class="glitch-button">04_COMMUNITY</a></li>
-          <li><a href="#contact" class="glitch-button">05_CONTACT</a></li>
+          <li>
+            <a
+              href="/"
+              class="glitch-button"
+              aria-label="Go to Home page"
+              accesskey="0"
+              >00_HOME</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="glitch-button"
+              aria-label="Go to About section"
+              accesskey="1"
+              >01_ABOUT</a
+            >
+          </li>
+          <li>
+            <a
+              href="#manifesto"
+              class="glitch-button"
+              aria-label="Go to Manifesto section"
+              accesskey="2"
+              >02_MANIFESTO</a
+            >
+          </li>
+          <li>
+            <a
+              href="#articles"
+              class="glitch-button"
+              aria-label="Go to Articles section"
+              accesskey="3"
+              >03_ARTICLES</a
+            >
+          </li>
+          <li>
+            <a
+              href="#community"
+              class="glitch-button"
+              aria-label="Go to Community section"
+              accesskey="4"
+              >04_COMMUNITY</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="glitch-button"
+              aria-label="Go to Contact section"
+              accesskey="5"
+              >05_CONTACT</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
 
-    <div class="container">
+    <main class="container">
       <section>
         <h2>About img.404</h2>
         <p>
@@ -40,48 +88,105 @@
         </p>
         <img
           src="./assets/image-not-found.png"
-          alt="404 - No Image Available"
+          alt="404 Error - Image Not Available"
         />
       </section>
 
-      <aside>
-        <h3>Related Links</h3>
+      <aside aria-labelledby="related-links">
+        <h3 id="related-links">Related_Links</h3>
         <ul>
           <li>
-            <a href="https://www.example1.com" target="_blank"
-              >Example Link 1</a
+            <a
+              href="https://community.thriveglobal.com/my-three-year-experiment-in-using-the-internet-without-pictures/"
+              aria-label="Link to a testimonial about using the internet without images"
+              target="_blank"
+              >_TESTIMONIAL</a
             >
           </li>
           <li>
-            <a href="https://www.example2.com" target="_blank"
-              >Example Link 2</a
+            <a
+              href="https://www.accessiblecampus.ca/wp-content/uploads/2017/01/A5-AccessibilityinE-LearningTurningImagesOffinWebBrowsers.pdf"
+              aria-label="PDF about accessibility and using the internet without images"
+              target="_blank"
+              >_PDF</a
             >
           </li>
           <li>
-            <a href="https://www.example3.com" target="_blank"
-              >Example Link 3</a
+            <a
+              href="https://www.youtube.com/watch?v=KgHHs_npf9I&ab_channel=NoRestForTheWicked"
+              aria-label="Link to a video explaining how to disable images on your browser"
+              target="_blank"
+              >_VIDEO</a
             >
           </li>
         </ul>
       </aside>
-    </div>
+    </main>
 
-    <footer>
-      <nav>
+    <footer footer aria-label="Footer">
+      <nav aria-label="Footer Navigation">
         <p>USE THE NUMBERS TO SWITCH SECTIONS</p>
         <ul>
-          <li><a href="#home" class="glitch-button small-glitch-button">00</a></li>
-          <li><a href="#about" class="glitch-button small-glitch-button">01</a></li>
-          <li><a href="#manifesto" class="glitch-button small-glitch-button">02</a></li>
-          <li><a href="#articles" class="glitch-button small-glitch-button">03</a></li>
-          <li><a href="#community" class="glitch-button small-glitch-button">04</a></li>
-          <li><a href="#contact" class="glitch-button small-glitch-button">05</a></li>
+          <li>
+            <a
+              href="/"
+              class="glitch-button small-glitch-button"
+              aria-label="Go to Home page"
+              accesskey="0"
+              >00</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="glitch-button small-glitch-button"
+              aria-label="Go to About section"
+              accesskey="1"
+              >01</a
+            >
+          </li>
+          <li>
+            <a
+              href="#manifesto"
+              class="glitch-button small-glitch-button"
+              aria-label="Go to Manifesto section"
+              accesskey="2"
+              >02</a
+            >
+          </li>
+          <li>
+            <a
+              href="#articles"
+              class="glitch-button small-glitch-button"
+              aria-label="Go to Articles section"
+              accesskey="3"
+              >03</a
+            >
+          </li>
+          <li>
+            <a
+              href="#community"
+              class="glitch-button small-glitch-button"
+              aria-label="Go to Community section"
+              accesskey="4"
+              >04</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="glitch-button small-glitch-button"
+              aria-label="Go to Contact section"
+              accesskey="5"
+              >05</a
+            >
+          </li>
         </ul>
       </nav>
 
-      <div>
+      <div class="hidden">
         <p>USE ARROWS TO SCROLL</p>
-        <img src="./assets/arrow-down-up.svg" alt="Scroll Icon" />
+        <img src="./assets/arrow-down-up.svg" class="icon" alt="Scroll Icon" />
       </div>
 
       <div>
@@ -89,7 +194,7 @@
         <p>All rights reserved.</p>
       </div>
 
-      <div>
+      <div class="hidden" aria-label="Contact Information" role="contentinfo">
         <p>EMAIL:</p>
         <p>CONTACT@IMG404.ORG</p>
       </div>
